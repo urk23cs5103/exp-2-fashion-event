@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Event Registration</title>
+
+    <!-- TC01: External CSS Linking -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+    <h1>Online Fashion Event Registration Portal</h1>
+    <p>Register now and enjoy our event!</p>
+</header>
+
+<section>
+
+    <!-- TC02: Image Media -->
+    <img src="pic.jpg" alt="Event Banner">
+
+    <!-- TC03: Video Media -->
+    <h3>Event Promo Video</h3>
+    <video controls>
+        <source src="videoplayback (1).mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+
+    <!-- TC04: Audio Media -->
+    <h3>Event Introduction Audio</h3>
+    <audio controls>
+        <source src="audio.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+
+    <!-- Registration Form -->
+    <h2>Event Registration Form</h2>
+
+    <form>
+
+        <!-- Text Input -->
+        <label for="name">Full Name *</label>
+        <input type="text" id="name" name="name" required>
+
+        <!-- Email Input -->
+        <label for="email">Email Address *</label>
+        <input type="email" id="email" name="email" required>
+
+        <!-- Date Input -->
+        <label for="date">Event Date *</label>
+        <input type="date" id="date" name="date" required>
+
+        <!-- Radio Buttons -->
+        <label>Gender *</label>
+        <div class="radio-group">
+            <label><input type="radio" name="gender" required> Male</label>
+            <label><input type="radio" name="gender"> Female</label>
+        </div>
+
+        <!-- Dropdown -->
+        <label for="eventType">Event Type *</label>
+        <select id="eventType" required>
+            <option value="">--Select--</option>
+            <option>Workshop</option>
+            <option>Seminar</option>
+            <option>Webinar</option>
+        </select>
+
+        <!-- Textarea -->
+        <label for="comments">Comments</label>
+        <textarea id="comments" rows="4"></textarea>
+
+        <!-- File Upload -->
+        <label for="file">Upload ID Proof</label>
+        <input type="file" id="file" accept=".jpg,.png,.pdf">
+
+        <!-- Submit -->
+        <button type="submit">Register</button>
+
+    </form>
+
+</section>
+
+</body>
+</html>
